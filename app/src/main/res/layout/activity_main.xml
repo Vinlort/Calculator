@@ -86,4 +86,51 @@
         app:layout_constraintRight_toRightOf="parent"
 
         />
+
+
+
+    <Button
+        android:id="@+id/four_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@id/one_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/five_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@id/two_button"
+        app:layout_constraintLeft_toRightOf="@id/four_button"
+
+        />
+
+    <Button
+        android:id="@+id/six_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@id/three_button"
+        app:layout_constraintLeft_toRightOf="@id/five_button"
+
+        />
+
+    <Button
+        android:id="@+id/minus_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@id/plus_button"
+        app:layout_constraintLeft_toRightOf="@id/six_button"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
