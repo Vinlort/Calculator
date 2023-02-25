@@ -131,6 +131,45 @@
         />
 
 
+    <Button
+        android:id="@+id/seven_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/four_button"
+        app:layout_constraintLeft_toLeftOf="parent"
 
+        />
+
+    <Button
+        android:id="@+id/eight_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@id/five_button"
+        app:layout_constraintLeft_toRightOf="@id/seven_button"
+
+        />
+
+    <Button
+        android:id="@+id/nine_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@id/six_button"
+        app:layout_constraintLeft_toRightOf="@id/eight_button"
+
+        />
+
+    <Button
+        android:id="@+id/mult_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@id/minus_button"
+        app:layout_constraintLeft_toRightOf="@id/nine_button"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
