@@ -29,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         val eightBtn = findViewById<Button>(R.id.eight_button)
         val nineBtn = findViewById<Button>(R.id.nine_button)
 
+        val numberStringBuilder = StringBuilder()
+
+        oneBtn.setOnClickListener {
+            numberStringBuilder.append("1")
+            resultTextView.text = numberStringBuilder
+        }
 
     }
 }
