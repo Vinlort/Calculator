@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.ezylang.evalex.Expression
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,8 +81,6 @@ class MainActivity : AppCompatActivity() {
             resultTextView.text = numberStringBuilder
         }
 
-
-
         pointBtn.setOnClickListener {
             numberStringBuilder.append(".")
             resultTextView.text = numberStringBuilder
@@ -105,5 +104,9 @@ class MainActivity : AppCompatActivity() {
             resultTextView.text = numberStringBuilder
         }
 
+        val exp = Expression("1+2")
+        val expVal = exp.evaluate().numberValue
+            resultTextView.text = expVal.toString()
     }
+
 }
