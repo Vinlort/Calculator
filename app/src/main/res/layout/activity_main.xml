@@ -301,16 +301,30 @@
         />
 
     <Button
+        android:id="@+id/history_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#0BD984"
+        android:text="his"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/seven_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:strokeColor="#11AB6B"
+        app:strokeWidth="3dp" />
+
+    <Button
         android:id="@+id/clearChar_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:backgroundTint="#0BD984"
-        android:text="delete"
+        android:text="del"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@id/eight_button"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/history_button"
         app:layout_constraintRight_toLeftOf="@id/clear_button"
         app:strokeColor="#11AB6B"
         app:strokeWidth="3dp" />
