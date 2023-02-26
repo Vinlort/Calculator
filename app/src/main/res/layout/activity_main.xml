@@ -8,16 +8,17 @@
 
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/result_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clear_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+
+        />
 
     <Button
         android:id="@+id/point_button"
@@ -68,7 +69,7 @@
         />
 
     <Button
-        android:id="@+id/div_button"
+        android:id="@+id/divide_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -264,13 +265,13 @@
         />
 
     <Button
-        android:id="@+id/mult_button"
+        android:id="@+id/multiply_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:backgroundTint="#0BD963"
-        android:text="x"
+        android:text="*"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/minus_button"
         app:layout_constraintLeft_toRightOf="@id/nine_button"
@@ -289,7 +290,7 @@
         android:backgroundTint="#0BD984"
         android:text="clear"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/mult_button"
+        app:layout_constraintBottom_toTopOf="@id/multiply_button"
         app:layout_constraintLeft_toRightOf="@id/eight_button"
         app:layout_constraintRight_toRightOf="parent"
         app:strokeColor="#11AB6B"
@@ -298,7 +299,7 @@
         />
 
     <Button
-        android:id="@+id/clear_one_char_button"
+        android:id="@+id/clearChar_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
