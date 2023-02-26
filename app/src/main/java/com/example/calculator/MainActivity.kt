@@ -137,7 +137,7 @@ class MainActivity : AppCompatActivity() {
             numberStringBuilder.append(expRes.toString())
 
         } catch (t: Throwable) {
-            Toast.makeText(this@MainActivity, "Exception: $t", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MainActivity, "Error!", Toast.LENGTH_LONG).show()
         }
     }
 }
