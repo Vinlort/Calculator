@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val multiplyBtn = findViewById<Button>(R.id.mult_button)
         val divideBtn = findViewById<Button>(R.id.div_button)
         val clearBtn = findViewById<Button>(R.id.clear_button)
+        val clearCharBtn = findViewById<Button>(R.id.clear_one_char_button)
 
         val zeroBtn = findViewById<Button>(R.id.zero_button)
         val oneBtn = findViewById<Button>(R.id.one_button)
@@ -109,6 +110,14 @@ class MainActivity : AppCompatActivity() {
         clearBtn.setOnClickListener {
             resultTextView.text = "0"
             numberStringBuilder.clear()
+        }
+
+        clearCharBtn.setOnClickListener {
+            val lastIndexInString = numberStringBuilder.length-1
+            if (lastIndexInString >= 0){
+            numberStringBuilder.deleteCharAt(lastIndexInString)
+            resultTextView.text = numberStringBuilder
+            }
         }
 
         equalBtn.setOnClickListener {
