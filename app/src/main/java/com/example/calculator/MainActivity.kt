@@ -36,5 +36,74 @@ class MainActivity : AppCompatActivity() {
             resultTextView.text = numberStringBuilder
         }
 
+        twoBtn.setOnClickListener {
+            numberStringBuilder.append("2")
+            resultTextView.text = numberStringBuilder
+        }
+        threeBtn.setOnClickListener {
+            numberStringBuilder.append("3")
+            resultTextView.text = numberStringBuilder
+        }
+
+        fourBtn.setOnClickListener {
+            numberStringBuilder.append("4")
+            resultTextView.text = numberStringBuilder
+        }
+
+        fiveBtn.setOnClickListener {
+            numberStringBuilder.append("5")
+            resultTextView.text = numberStringBuilder
+        }
+
+        sixBtn.setOnClickListener {
+            numberStringBuilder.append("6")
+            resultTextView.text = numberStringBuilder
+        }
+
+        sevenBtn.setOnClickListener {
+            numberStringBuilder.append("7")
+            resultTextView.text = numberStringBuilder
+        }
+
+        eightBtn.setOnClickListener {
+            numberStringBuilder.append("8")
+            resultTextView.text = numberStringBuilder
+        }
+
+        nineBtn.setOnClickListener {
+            numberStringBuilder.append("9")
+            resultTextView.text = numberStringBuilder
+        }
+
+        zeroBtn.setOnClickListener {
+            numberStringBuilder.append("0")
+            resultTextView.text = numberStringBuilder
+        }
+
+
+
+        pointBtn.setOnClickListener {
+            numberStringBuilder.append(".")
+            resultTextView.text = numberStringBuilder
+        }
+
+        multiplyBtn.setOnClickListener {
+            numberStringBuilder.append("*")
+            resultTextView.text = numberStringBuilder
+        }
+        plusBtn.setOnClickListener {
+            numberStringBuilder.append("+")
+            resultTextView.text = numberStringBuilder
+        }
+        minusBtn.setOnClickListener {
+            numberStringBuilder.append("-")
+            resultTextView.text = numberStringBuilder
+        }
+
+        subBtn.setOnClickListener {
+            numberStringBuilder.append("/")
+            resultTextView.text = numberStringBuilder
+        }
+
     }
 }
