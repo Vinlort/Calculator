@@ -187,5 +187,15 @@
         app:layout_constraintRight_toRightOf="parent"
 
         />
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="<-"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@id/mult_button"
+        app:layout_constraintLeft_toRightOf="@id/nine_button"
+        app:layout_constraintRight_toRightOf="parent"
 
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

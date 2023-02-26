@@ -104,9 +104,16 @@ class MainActivity : AppCompatActivity() {
             resultTextView.text = numberStringBuilder
         }
 
-        val exp = Expression("1+2")
-        val expVal = exp.evaluate().numberValue
-            resultTextView.text = expVal.toString()
+        equalBtn.setOnClickListener {
+            val stringExpression = numberStringBuilder.toString()
+            val exp = Expression(stringExpression)
+            val expRes = exp.evaluate().numberValue
+            resultTextView.text = expRes.toString()
+
+            numberStringBuilder.clear()
+            numberStringBuilder.append(expRes.toString())
+        }
+
     }
 
 }
