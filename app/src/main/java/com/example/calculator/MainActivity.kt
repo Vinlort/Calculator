@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         equalButton.setOnClickListener {
-            calculate(resultField)
             saveToHistory()
+            calculate(resultField)
         }
 
         historyButton.setOnClickListener {
